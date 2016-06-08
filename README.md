@@ -10,7 +10,7 @@ mvn install:install-file -Dfile=~/Downloads/sen-mavenized/lib/sen.jar -DgroupId=
 
 Next you need to add its dependency upon `commons-logging`. First, enter the folder containing its pom file via `cd ~/.m2/repository/sen-mavenized/sen/1.2.2.1`.
 
-... Now replace the contents of the `sen-1.2.2.1.pom` with the following:
+... Now overwrite all of the contents of the `sen-1.2.2.1.pom` with the following:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
