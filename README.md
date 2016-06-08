@@ -1,4 +1,6 @@
 # sen-mavenized
+This is effectively a mirror of the code for Sen 1.2.2.1, a [Java wrapper for MeCab](https://www.mlab.im.dendai.ac.jp/~yamada/ir/MorphologicalAnalyzer/Sen.html) which is [hosted on java.net](https://java.net/projects/sen), in preparation for the fact that java.net will [close permanently](https://about.java.net/) on April 28th, 2017. I had actually hoped to upload it to a Maven repository, but need to figure out how to do so. For now, I simply include the steps for Mavenizing it locally, translated from [this webpage](https://hondou.homedns.org/pukiwiki/pukiwiki.php?Java%20SEN%20%A4%C7%B7%C1%C2%D6%C1%C7%B2%F2%C0%CF#d971f576).
+
 ## Installing the jar to your local Maven repository
 Clone the `sen-mavenized` repository to any folder - for this example, we will be assuming the Downloads folder.
 
