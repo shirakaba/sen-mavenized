@@ -43,9 +43,8 @@
   <!-- end initial environment -->
 
   <target name="compile" depends="init">
-
     <exec executable="cpp" output="${src.dir}/net/java/sen/util/DoubleArrayTrie.java" >
-	<arg line="-P ${src.dir}/net/java/sen/util/DoubleArrayTrie.cpp"/>
+  <arg line="-P ${src.dir}/net/java/sen/util/DoubleArrayTrie.cpp"/>
     </exec>
 
     <javac srcdir="${src.dir}"

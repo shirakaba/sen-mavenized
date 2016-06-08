@@ -13,7 +13,7 @@
   <property name="perl.bin" value="/usr/bin/perl"/>
   <property name="ipa2mecab"  value="./ipa2mecab.pl"/>
   <property name="compound"  value="./compound.pl"/>
-  <property name="ipadic.home" value="http://chasen.aist-nara.ac.jp/stable/ipadic"/>
+  <property name="ipadic.home" value="http://chasen.naist.jp/stable/ipadic/"/>
   <property name="ipadic.version" value="2.6.0"/>
   <property name="ipadic.archive"  value="ipadic-${ipadic.version}.tar.gz"/>
   <property name="ipadic.dir"  value="ipadic-${ipadic.version}"/>

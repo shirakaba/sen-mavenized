@@ -1,0 +1,6 @@
+build
+dic/ipadic*
+dic/*.sen
+dic/*.csv
+bin/.svn
+.DS_Store

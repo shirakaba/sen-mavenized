@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 
 # IPA dic to MeCab Converter for ipadic-2.5.0 ipadic-2.5.1
-# $Id: compound.pl,v 1.2 2004-10-14 02:45:16 tfukui Exp $;
+# $Id: compound.pl,v 1.2 2004/10/14 02:45:16 tfukui Exp $;
 
 my $PREFIX = shift (@ARGV) || ".";
 $PREFIX =~ s#/$##g;
