@@ -4,12 +4,14 @@ Clone the `sen-mavenized` repository to any folder - for this example, we will b
 
 Run the following script, replacing the filepath `-Dfile=...` with whatever filepath leads to sen.jar on your system:
 
-`mvn install:install-file -Dfile=~/Downloads/sen-mavenized/lib/sen.jar -DgroupId=sen -DartifactId=sen -Dversion=1.2.2.1 -Dpackaging=jar -DgeneratePom=true`
+```
+mvn install:install-file -Dfile=~/Downloads/sen-mavenized/lib/sen.jar -DgroupId=sen-mavenized -DartifactId=sen -Dversion=1.2.2.1 -Dpackaging=jar -DgeneratePom=true
+```
 
 Next you need to add its dependency upon `commons-logging`. First, enter the folder containing its pom file via `cd ~/.m2/repository/sen-mavenized/sen/1.2.2.1`.
 
 ... Now replace the contents of the `sen-1.2.2.1.pom` with the following:
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -48,10 +50,10 @@ The actual key part is only the `<dependencies>` section. I don't actually know 
 
 ## Adding the jar as a dependency in your Maven build
 Navigate to your project's pom.xml and add the following dependency:
-```
-    <dependency>
-      <groupId>sen-mavenized</groupId>
-      <artifactId>sen</artifactId>
-      <version>1.2.2.1</version>
-    </dependency>
+```xml
+<dependency>
+  <groupId>sen-mavenized</groupId>
+  <artifactId>sen</artifactId>
+  <version>1.2.2.1</version>
+</dependency>
 ```
