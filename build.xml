@@ -43,8 +43,9 @@
   <!-- end initial environment -->
 
   <target name="compile" depends="init">
-    <exec executable="cpp" output="${src.dir}/net/java/sen/util/DoubleArrayTrie.java" >
-  <arg line="-P ${src.dir}/net/java/sen/util/DoubleArrayTrie.cpp"/>
+  <!-- Didn't have cpp executable, so changed to gcc. gcc flags explained at https://gcc.gnu.org/onlinedocs/gcc/Preprocessor-Options.html -->
+    <exec executable="gcc" output="${src.dir}/net/java/sen/util/DoubleArrayTrie.java" >
+	<arg line="-xc -E -P -C ${src.dir}/net/java/sen/util/DoubleArrayTrie.cpp"/>
     </exec>
 
     <javac srcdir="${src.dir}"
